@@ -21,9 +21,65 @@
         <div class="controls">
             <div class="control-group">
                 <label for="sizeSelect">Size</label>
+                <select id="sizeSelect">
+                    <option value="10" selected>10x10</option>
+                    <option value="12">12x12</option>
+                    <option value="15">15x15</option>
+                    <option value="20">20x20</option>
+                </select>
             </div>
-        </div>
+
+            <div class="control-group">
+                <label for="speedSelect">Speed</label>
+                <select id="speedSelect">
+                    <option value="150" selected>Slow</option>
+                    <option value="100">Normal</option>
+                    <option value="70">Fast</option>
+                    <option value="50">Light</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="modeSelect">Modes</label>
+                <select id="modeSelect">
+                    <option value="walls" selected>Walls</option>
+                    <option value="wrap">Teleport</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="skinSelect">Snake skin</label>
+                <select id="skinSelect">
+                    <option value="classic" selected>Classic</option>
+                    <option value="neon">Neon</option>
+                    <option value="retro">Retro</option>
+                    <option value="matrix">Matrix</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="volumeSlider">Volume</label>
+                <input type="range" id="volumeSlider" min="0" max="100" value="60">
+            </div> 
+            <button id="start">Start </button>
+            <button id="apuse">Pause </button> 
+        </div>         
     </section>
-    
+    <div class="board"></div>
+    <section class="help">
+        <p>How to play</p>
+    </section>
+    <div id="gameOver" class="overlay">
+        <div class="overlay-card">
+            <h2>❌ Game Over ❌</h2>
+            <p>Best Score: <span id="historybestscore">0</span> </p>
+            <p>Score: <span id="finalscore">0</span> </p>
+            <div class="overlay-actions">
+                <button id="restart">Restart 🔄️</button>
+            </div>
+            <p class="hint">Press <kbd>R</kbd> for try again or <kbd>Enter</kbd> for a new game</p>
+        </div>     
+    </div>
+
 </body>
 </html>
