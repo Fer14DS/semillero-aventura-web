@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego Snake 🐍</title>
+    <link rel="stylesheet" href="./fernando.css">
 </head>
 <body>
     <header class="header">
         <h1>Mi juego web🤖</h1>
     </header>
+    <hr>
     <section class="hud">
         <div class="stats">
             <div class="stat"><span>Score:</span> <span id="scoreBoard">0</span></div>
@@ -32,8 +34,8 @@
             <div class="control-group">
                 <label for="speedSelect">Speed</label>
                 <select id="speedSelect">
-                    <option value="150" selected>Slow</option>
-                    <option value="100">Normal</option>
+                    <option value="150">Slow</option>
+                    <option value="100" selected>Normal</option>
                     <option value="70">Fast</option>
                     <option value="50">Light</option>
                 </select>
@@ -62,7 +64,7 @@
                 <input type="range" id="volumeSlider" min="0" max="100" value="60">
             </div> 
             <button id="start">Start </button>
-            <button id="apuse">Pause </button> 
+            <button id="pause">Pause </button> 
         </div>         
     </section>
     <div class="board"></div>
